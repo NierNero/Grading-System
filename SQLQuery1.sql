@@ -35,5 +35,5 @@ VALUES (1, 1, 'Math', 90),
 --Note: Query to calculate average score for each student
 SELECT s.student_name, s.student_class, AVG(g.score) AS average_score
 FROM students s
-INNER JOIN grades g ON s.student_id = g.student_id
+JOIN grades g ON s.student_id = g.student_id
 GROUP BY s.student_name, s.student_class;
